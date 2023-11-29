@@ -6,7 +6,7 @@
 
 We propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. Refer to our [paper](https://arxiv.org/abs/xxx) for more details. Our code is under preparation.
 
-<img width="900" alt="image" src='media/teaser_github.gif'>
+<img width="1000" alt="image" src='media/teaser_github_new.gif'>
 
 Introduction
 -----------------
