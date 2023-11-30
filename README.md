@@ -4,7 +4,7 @@
 > arXiv 2023  
 > ETH Zurich
 
-We propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. Refer to our [paper](https://arxiv.org/abs/xxx) for more details. Our code is under preparation.
+We propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. Refer to our [paper](https://arxiv.org/abs/xxx) for more details. Our code is under preparation, please stay tuned!
 
 <img width="1000" alt="image" src='media/teaser_github_demo.gif'>
 
@@ -14,37 +14,37 @@ The recent Gaussian Splatting achieves high-quality and real-time novel-view syn
 <img width="1096" alt="image" src='media/github_method.png'>
 
 # Application Overview
+Grouped Gaussians after training. Each group represents a specific instance / stuff of the 3D scene and can be fully decoupled.
+<img width="1096" alt="image" src='media/editing_operation.png'>
 
 ## 3D Object Removal
-Note: For box-prompting-based evaluation, we feed SAM, MobileSAM and our HQ-SAM with the same image/video bounding boxes and adopt the single mask output mode of SAM. 
+Our Gaussian Grouping can remove the large-scale objects on the Tanks & Temples dataset, from the whole 3D scene with greatly reduced artifacts.
+
 
 ## 3D Object Inpainting
-Note: For box-prompting-based evaluation, we feed SAM, MobileSAM and our HQ-SAM with the same image/video bounding boxes and adopt the single mask output mode of SAM. 
-
-We provide comprehensive performance, model size and speed comparison on SAM variants:
-<img width="1096" alt="image" src='figs/sam_variants_comp.png'>
+Comparison on 3D object inpainting cases, where SPIn-NeRF requires 5h training while our method with better inpainting quality only needs 1 hour training and 20 minutes tuning.
 
 ## 3D Object Style Transfer
-![backbones](figs/sam_vs_hqsam_backbones.png)
-Note: For the COCO dataset, we use a SOTA detector FocalNet-DINO trained on the COCO dataset as our box prompt generator.
+Comparison on 3D object style transfer cases, Our Gaussian Grouping produces more coherent and natural transfer results across views, with faithfully preserved background.
+
 
 ## 3D Open-world Segmentation
-Note:Using ViT-L backbone. We adopt the SOTA detector Mask2Former trained on the YouTubeVIS 2019 dataset as our video boxes prompt generator while reusing its object association prediction.
-![ytvis](figs/ytvis.png)
+Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. The masks predicted by Gaussian Group contains much sharp and accurate boundary than LERF.
+
 
 ## 3D Multi-Object Editing
-Note: Using ViT-L backbone. We adopt the SOTA model XMem as our video boxes prompt generator while reusing its object association prediction.
-![davis](figs/davis.png)
+Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. Then we concurrently perform 3D object editing for several objects.
+
 
 
 Citation
 ---------------
-If you find HQ-SAM useful in your research or refer to the provided baseline results, please star :star: this repository and consider citing :pencil::
+If you find Gaussian Grouping useful in your research or refer to the provided baseline results, please star :star: this repository and consider citing :pencil::
 ```
-@inproceedings{sam_hq,
-    title={Segment Anything in High Quality},
-    author={Ke, Lei and Ye, Mingqiao and Danelljan, Martin and Liu, Yifan and Tai, Yu-Wing and Tang, Chi-Keung and Yu, Fisher},
-    booktitle={NeurIPS},
-    year={2023}
-}  
+@article{gaussian_grouping,
+  title={Gaussian Grouping: Segment and Edit Anything in 3D Scenes},
+  author={Ye, Mingqiao and Danelljan, Martin and Yu, Fisher and Ke, Lei},
+  journal={arXiv preprint arXiv:xxx.xxx},
+  year={2023}
+}
 ```
