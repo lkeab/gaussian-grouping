@@ -20,21 +20,29 @@ Grouped Gaussians after training. Each group represents a specific instance / st
 ## 3D Object Removal
 Our Gaussian Grouping can remove the large-scale objects on the Tanks & Temples dataset, from the whole 3D scene with greatly reduced artifacts.
 
+https://github.com/lkeab/gaussian-grouping/assets/17427852/f3b0f964-a610-49ab-8332-f2caa64fbf45
 
 ## 3D Object Inpainting
 Comparison on 3D object inpainting cases, where SPIn-NeRF requires 5h training while our method with better inpainting quality only needs 1 hour training and 20 minutes tuning.
 
+https://github.com/lkeab/gaussian-grouping/assets/17427852/9f5050da-6a50-4a5f-a755-3bdc55eab1bc
+
+https://github.com/lkeab/gaussian-grouping/assets/17427852/3ed0203c-0047-4333-8bf0-0c10f5a078d1
+
 ## 3D Object Style Transfer
 Comparison on 3D object style transfer cases, Our Gaussian Grouping produces more coherent and natural transfer results across views, with faithfully preserved background.
 
+https://github.com/lkeab/gaussian-grouping/assets/17427852/2f00eab5-590b-4295-bb1c-2076acc63d4a
 
 ## 3D Open-world Segmentation
 Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. The masks predicted by Gaussian Group contains much sharp and accurate boundary than LERF.
 
+https://github.com/lkeab/gaussian-grouping/assets/17427852/d972f552-cd89-4dc0-8953-2cde9a438192
 
 ## 3D Multi-Object Editing
 Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. Then we concurrently perform 3D object editing for several objects.
 
+https://github.com/lkeab/gaussian-grouping/assets/17427852/0f01aeb6-8c6d-4ede-9b71-4d2f059459b9
 
 
 Citation
