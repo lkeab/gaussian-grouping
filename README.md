@@ -42,8 +42,7 @@ https://github.com/lkeab/gaussian-grouping/assets/17427852/d972f552-cd89-4dc0-89
 ## 3D Multi-Object Editing
 Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. Then we concurrently perform 3D object editing for several objects.
 
-https://github.com/lkeab/gaussian-grouping/assets/17427852/0f01aeb6-8c6d-4ede-9b71-4d2f059459b9
-
+https://github.com/lkeab/gaussian-grouping/assets/17427852/d9638a1c-1569-4c72-91b9-ee68e9e017e5
 
 Citation
 ---------------
