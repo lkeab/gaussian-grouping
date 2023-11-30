@@ -35,7 +35,7 @@ Comparison on 3D object style transfer cases, Our Gaussian Grouping produces mor
 https://github.com/lkeab/gaussian-grouping/assets/17427852/2f00eab5-590b-4295-bb1c-2076acc63d4a
 
 ## 3D Open-world Segmentation
-Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. The masks predicted by Gaussian Group contains much sharp and accurate boundary than LERF.
+Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. The masks predicted by Gaussian Grouping contains much sharp and accurate boundary than LERF.
 
 https://github.com/lkeab/gaussian-grouping/assets/17427852/d972f552-cd89-4dc0-8953-2cde9a438192
 
