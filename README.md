@@ -18,7 +18,7 @@ Grouped Gaussians after training. Each group represents a specific instance / st
 <img width="1096" alt="image" src='media/editing_operation.png'>
 
 ## 3D Object Removal
-Our Gaussian Grouping can remove the large-scale objects on the Tanks & Temples dataset, from the whole 3D scene with greatly reduced artifacts.
+Our Gaussian Grouping can remove the large-scale objects on the Tanks & Temples dataset, from the whole 3D scene with greatly reduced artifacts. Zoom for better view.
 
 https://github.com/lkeab/gaussian-grouping/assets/17427852/f3b0f964-a610-49ab-8332-f2caa64fbf45
 
