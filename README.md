@@ -14,7 +14,7 @@ The recent Gaussian Splatting achieves high-quality and real-time novel-view syn
 <img width="1096" alt="image" src='media/github_method.png'>
 
 # Application Overview
-Grouped Gaussians after training. Each group represents a specific instance / stuff of the 3D scene and can be fully decoupled.
+**Local Gaussian Editing scheme**: Grouped Gaussians after training. Each group represents a specific instance / stuff of the 3D scene and can be fully decoupled.
 <img width="1096" alt="image" src='media/editing_operation.png'>
 
 ## 3D Object Removal
