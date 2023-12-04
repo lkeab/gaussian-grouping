@@ -1,10 +1,10 @@
 # Gaussian Grouping
 
-> [**Gaussian Grouping: Segment and Edit Anything in 3D Scenes**](https://arxiv.org/abs/xxxx.xxxx)           
+> [**Gaussian Grouping: Segment and Edit Anything in 3D Scenes**](https://arxiv.org/abs/2312.00732)           
 > arXiv 2023  
 > ETH Zurich
 
-We propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. Refer to our [paper](https://arxiv.org/abs/xxx) for more details. **Our code is under preparation, please stay tuned!**
+We propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. Refer to our [paper](https://arxiv.org/abs/2312.00732) for more details. **Our code is under preparation, please stay tuned!**
 
 <img width="1000" alt="image" src='media/teaser_github_demo.gif'>
 
@@ -51,7 +51,7 @@ If you find Gaussian Grouping useful in your research or refer to the provided b
 @article{gaussian_grouping,
   title={Gaussian Grouping: Segment and Edit Anything in 3D Scenes},
   author={Ye, Mingqiao and Danelljan, Martin and Yu, Fisher and Ke, Lei},
-  journal={arXiv preprint arXiv:xxx.xxx},
+  journal={arXiv preprint arXiv:2312.00732},
   year={2023}
 }
 ```
