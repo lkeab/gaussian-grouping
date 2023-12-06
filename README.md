@@ -4,7 +4,7 @@
 > arXiv 2023  
 > ETH Zurich
 
-We propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. It also efficiently supports versatile 3D scene editing tasks. Refer to our [paper](https://arxiv.org/abs/2312.00732) for more details. **Our code is under preparation, please stay tuned!**
+We propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. It also efficiently supports versatile 3D scene editing tasks. Refer to our [paper](https://arxiv.org/abs/2312.00732) for more details. **Our code is under preparation (expected this month), please stay tuned!**
 
 <img width="1000" alt="image" src='media/teaser_github_demo.gif'>
 
