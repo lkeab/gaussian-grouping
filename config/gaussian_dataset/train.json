@@ -1,0 +1,9 @@
+{
+    "densify_until_iter": 10000 ,
+    "num_classes": 256,
+    "reg3d_interval": 5,
+    "reg3d_k": 5,
+    "reg3d_lambda_val": 2,
+    "reg3d_max_points": 200000,
+    "reg3d_sample_size": 1000
+}

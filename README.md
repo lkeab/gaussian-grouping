@@ -4,9 +4,14 @@
 > arXiv 2023  
 > ETH Zurich
 
-We propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. It also efficiently supports versatile 3D scene editing tasks. Refer to our [paper](https://arxiv.org/abs/2312.00732) for more details. **Our code is under preparation (expected this month), please stay tuned!**
+We propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. It also efficiently supports versatile 3D scene editing tasks. Refer to our [paper](https://arxiv.org/abs/2312.00732) for more details.
 
 <img width="1000" alt="image" src='media/teaser_github_demo.gif'>
+
+Updates
+-----------------
+:fire::fire: 2023/12/20: We released the [Install Notes](docs/install.md) and [Training & Rendering](docs/train.md) code.
+
 
 # Introduction
 The recent Gaussian Splatting achieves high-quality and real-time novel-view synthesis of the 3D scenes. However, it is solely concentrated on the appearance and geometry modeling, while lacking in fine-grained object-level scene understanding. To address this issue, we propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. We augment each Gaussian with a compact Identity Encoding, allowing the Gaussians to be grouped according to their object instance or stuff membership in the 3D scene. Instead of resorting to expensive 3D labels, we supervise the Identity Encodings during the differentiable rendering by leveraging the 2D mask predictions by SAM, along with introduced 3D spatial consistency regularization. Comparing to the implicit NeRF representation, we show that the discrete and grouped 3D Gaussians can reconstruct, segment and edit anything in 3D with high visual quality, fine granularity and efficiency. Based on Gaussian Grouping, we further propose a local Gaussian Editing scheme, which shows efficacy in versatile scene editing applications, including 3D object removal, inpainting, colorization and scene recomposition.
@@ -43,6 +48,13 @@ https://github.com/lkeab/gaussian-grouping/assets/17427852/d972f552-cd89-4dc0-89
 Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. Then we concurrently perform 3D object editing for several objects.
 
 https://github.com/lkeab/gaussian-grouping/assets/17427852/d9638a1c-1569-4c72-91b9-ee68e9e017e5
+
+# Installation
+You can refer to the [install document](./docs/install.md) to build the Python environment.
+
+# Training and Masks Rendering
+Then refer to the [train document](./docs/train.md) to train your own scene.
+
 
 Citation
 ---------------

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project]
+name = "deva"
+version = "1.0.0"
+authors = [{ name = "Rex Cheng", email = "hkchengrex@gmail.com" }]
+description = "Tracking Anything with Decoupled Video Segmenttation (DEVA), ICCV 2023"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  'gitpython >= 3.1',
+  'thinplate@git+https://github.com/cheind/py-thin-plate-spline',
+  'hickle >= 5.0',
+  'tensorboard >= 2.12',
+  'numpy >= 1.22',
+  'Pillow >= 9.5',
+  'opencv-python >= 4.8',
+  'scipy >= 1.10.0',
+  'pycocotools >= 2.0.7',
+  'supervision >= 0.14',
+  'tqdm >= 4.66.1',
+  'gurobipy >= 10.0.3',
+  'PuLP >= 2.7',
+  'gradio >= 3.44',
+  'gdown >= 4.7.1',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hkchengrex/Tracking-Anything-with-DEVA"
+"Bug Tracker" = "https://github.com/hkchengrex/Tracking-Anything-with-DEVA/issues"
