@@ -76,8 +76,10 @@ class Scene:
 
         if self.loaded_iter:
             if isinstance(self.loaded_iter,str):
-                print("Not load anything")
-                pass
+                print("edit load path", self.loaded_iter)
+                self.gaussians.load_ply(os.path.join(self.model_path,
+                                                            "point_cloud"+self.loaded_iter,
+                                                            "point_cloud.ply"))
             else:
                 self.gaussians.load_ply(os.path.join(self.model_path,
                                                             "point_cloud",

@@ -18,7 +18,7 @@ from scipy.spatial.transform import Rotation as R
 class Camera(nn.Module):
     def __init__(self, colmap_id, R, T, FoVx, FoVy, image, gt_alpha_mask,
                  image_name, uid,
-                 trans=np.array([0.0, 0.0, 0.0]), scale=1.0, data_device = "cuda", objects=None
+                 trans=np.array([0.0, 0.0, 0.0]), scale=1.0, data_device = "cuda", objects=None, style_transfer=False
                  ):
         super(Camera, self).__init__()
 
@@ -61,7 +61,9 @@ class Camera(nn.Module):
             self.objects = objects.to(self.data_device)
         else:
             self.objects = None
-        self.transfer_image = self.original_image.clone()
+        
+        if style_transfer:
+            self.transfer_image = self.original_image.clone()
 
 
 class MiniCam:

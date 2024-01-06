@@ -10,7 +10,9 @@ We propose Gaussian Grouping, which extends Gaussian Splatting to jointly **reco
 
 Updates
 -----------------
-:fire::fire: 2023/12/20: We released the [Install Notes](docs/install.md) and [Training & Rendering](docs/train.md) code.
+:fire::fire: 2024/1/6: We released the [3D Object Removal & Inpainting](docs/edit_removal_inpaint.md) code.
+
+2023/12/20: We released the [Install Notes](docs/install.md) and [Training & Rendering](docs/train.md) code.
 
 
 # Introduction
@@ -54,6 +56,9 @@ You can refer to the [install document](./docs/install.md) to build the Python e
 
 # Training and Masks Rendering
 Then refer to the [train document](./docs/train.md) to train your own scene.
+
+# 3D Object Removal and Inpainting
+You can select the 3D object for removal and inpainting after training. Details are in the [edit removal inpaint document](./docs/edit_removal_inpaint.md).
 
 
 Citation

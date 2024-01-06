@@ -1,0 +1,10 @@
+{
+    "num_classes": 256,
+    "removal_thresh": 0.3,
+    "select_obj_id" : [49],
+    "images": "images_inpaint_unseen",
+    "object_path" : "inpaint_object_mask_255",
+    "r" : 1,
+    "lambda_dlpips" : 0.5,
+    "finetune_iteration": 10000
+}
