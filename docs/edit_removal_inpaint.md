@@ -44,22 +44,45 @@ First finish training and remove the object you want to inpaint. After removal, 
 Unseen region mask is the empty region left after removing the object, and we can perform 2D inpainting on it. An example is shown in the bottom of fig8 in our paper. We can obtain the unseen region mask with DEVA. For example,
 
 ```bash
+#!/bin/bash
+
 cd Tracking-Anything-with-DEVA/
 
-python demo/demo_with_text.py   --chunk_size 4    --img_path ${removal_render_path}  --amp \
-  --temporal_setting semionline --size 480   --output ${inpaint_2d_unseen_mask}  \
+img_path=../output/mipnerf360/kitchen/train/ours_object_removal/iteration_30000/renders
+mask_path=./output_2d_inpaint_mask/mipnerf360/kitchen
+lama_path=../lama/LaMa_test_images/mipnerf360/kitchen
+
+python demo/demo_with_text.py   --chunk_size 4    --img_path $img_path  --amp \
+  --temporal_setting semionline --size 480   --output $mask_path  \
   --prompt "black blurry hole"
+
+python prepare_lama_input.py $img_path $mask_path $lama_path
+cd ..
 ```
 
-You can also try other prompts like "black region" to get the best unseen region mask.
+You can also try other prompts like "black region" and change the mask score threshold to get the best unseen region mask result.
 
 
 
 ### 2.2 (Optional) 2D inpaint
 
-We follow [SPIN-NeRF](https://github.com/SamsungLabs/SPIn-NeRF) pipeline of 2D guidance for inpainting. We use LAMA to inpaint on 2D images rendered after removing the object. We only need 2D inpainting on RGB and do not need inpainting on depth map.
+We follow [SPIN-NeRF](https://github.com/SamsungLabs/SPIn-NeRF) pipeline of 2D guidance for inpainting. We use LaMa to inpaint on 2D images rendered after removing the object with unseen region mask. We only need 2D inpainting on RGB and do not need inpainting on depth map.
 
-You can follow LAMA steps of 2D inpainting on RGB image with the images rendered after removal and the unseen region mask. We will provide detail steps on custom datasets later.
+Now, make sure to follow the [LaMa](https://github.com/advimman/lama) instructions for downloading the big-lama model.
+
+```bash
+#!/bin/bash
+
+cd lama
+export TORCH_HOME=$(pwd) && export PYTHONPATH=$(pwd)
+
+dataset=mipnerf360/kitchen
+img_dir=../data/$dataset
+
+python bin/predict.py refine=True model.path=$(pwd)/big-lama indir=$(pwd)/LaMa_test_images/$dataset outdir=$(pwd)/output/$dataset
+python prepare_pseudo_label.py $(pwd)/output/$dataset $img_dir
+
+```
 
 
 ### 2.3 3D inpaint

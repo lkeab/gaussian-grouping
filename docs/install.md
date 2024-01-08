@@ -20,7 +20,7 @@ pip install submodules/diff-gaussian-rasterization
 pip install submodules/simple-knn
 ```
 
-(Optional) If you want to prepare masks on your own dataset, you will also need prepare [DEVA]((https://github.com/hkchengrex/Tracking-Anything-with-DEVA)) environment.
+(Optional) If you want to prepare masks on your own dataset, you will also need to prepare [DEVA](https://github.com/hkchengrex/Tracking-Anything-with-DEVA) environment.
 
 ```bash
 cd Tracking-Anything-with-DEVA
@@ -37,5 +37,10 @@ python -m pip install -e GroundingDINO
 cd ../..
 ```
 
+(Optional) If you want to inpaint on your own dataset, you will also need to prepare [LaMa](https://github.com/advimman/lama) environment.
 
-
+```bash
+cd lama
+pip install -r requirements.txt
+cd ..
+```
