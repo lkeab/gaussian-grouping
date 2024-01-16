@@ -10,7 +10,9 @@ We propose Gaussian Grouping, which extends Gaussian Splatting to jointly **reco
 
 Updates
 -----------------
-:fire::fire: 2024/1/6: We released the [3D Object Removal & Inpainting](docs/edit_removal_inpaint.md) code.
+:fire::fire: We released the [LERF-Mask dataset](docs/dataset.md) and evaluation code.
+
+2024/1/6: We released the [3D Object Removal & Inpainting](docs/edit_removal_inpaint.md) code.
 
 2023/12/20: We released the [Install Notes](docs/install.md) and [Training & Rendering](docs/train.md) code.
 
