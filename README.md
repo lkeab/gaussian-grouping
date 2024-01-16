@@ -59,6 +59,9 @@ You can refer to the [install document](./docs/install.md) to build the Python e
 # Training and Masks Rendering
 Then refer to the [train document](./docs/train.md) to train your own scene.
 
+# Open-Vocabulary Segmentation
+For evaluation on the **LERF-Mask dataset** proposed in our paper, you can refer to the [dataset document](./docs/dataset.md).
+
 # 3D Object Removal and Inpainting
 You can select the 3D object for removal and inpainting after training. Details are in the [edit removal inpaint document](./docs/edit_removal_inpaint.md).
 
