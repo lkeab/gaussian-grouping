@@ -29,7 +29,17 @@ lerf_mask
 ```
 
 ## 2. Render mask with text-prompt
-For semantic information of each mask output, since SAM masks are class-agnostic, we can use a vision-language detector's mask output, for example [grounded-sam](https://github.com/IDEA-Research/Grounded-Segment-Anything), to match our mask to give semantic information. We will provide a detailed step about how to use grouned-sam with text-prompt for ours mask output soon.
+For semantic information of each mask output, since SAM masks are class-agnostic, we can use a vision-language detector's mask output, for example [grounded-sam](https://github.com/IDEA-Research/Grounded-Segment-Anything), to match our mask to give semantic information.
+
+We test our segmentation with a simple strategy using grounded-sam on the first frame for text-prompt. You can use the following command with the provided checkpoints on [hugging face](https://huggingface.co/mqye/Gaussian-Grouping/tree/main/checkpoint) or your own training result. In the future we can also explore better detectors and prompt formats.
+
+```
+python render_lerf_mask.py -m output/lerf_pretrain/figurines --skip_train
+python render_lerf_mask.py -m output/lerf_pretrain/ramen --skip_train
+python render_lerf_mask.py -m output/lerf_pretrain/teatime --skip_train
+```
+
+
 
 
 ## 3. LERF-Mask evaluation
