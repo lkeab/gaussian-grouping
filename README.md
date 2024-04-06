@@ -1,6 +1,7 @@
 # Gaussian Grouping
 
 > [**Gaussian Grouping: Segment and Edit Anything in 3D Scenes**](https://arxiv.org/abs/2312.00732)           
+> [[Project Page]](https://ymq2017.github.io/gaussian-grouping)           
 > arXiv 2023  
 > ETH Zurich
 
@@ -46,7 +47,9 @@ https://github.com/lkeab/gaussian-grouping/assets/17427852/2f00eab5-590b-4295-bb
 ## 3D Open-world Segmentation
 Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. The masks predicted by Gaussian Grouping contains much sharp and accurate boundary than LERF.
 
-https://github.com/lkeab/gaussian-grouping/assets/17427852/d972f552-cd89-4dc0-8953-2cde9a438192
+https://github.com/lkeab/gaussian-grouping/assets/60028943/38241b99-1497-4a7c-bd22-5b018b85548c
+
+
 
 ## 3D Multi-Object Editing
 Our Gaussian Grouping approach jointly reconstructs and segments anything in full open-world 3D scenes. Then we concurrently perform 3D object editing for several objects.
