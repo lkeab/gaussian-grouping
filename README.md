@@ -2,7 +2,7 @@
 
 > [**Gaussian Grouping: Segment and Edit Anything in 3D Scenes**](https://arxiv.org/abs/2312.00732)           
 > [[Project Page]](https://ymq2017.github.io/gaussian-grouping)           
-> arXiv 2023  
+> ECCV 2024  
 > ETH Zurich
 
 We propose Gaussian Grouping, which extends Gaussian Splatting to jointly **reconstruct** and **segment** anything in open-world 3D scenes via **lifting 2D SAM**. It also efficiently supports versatile 3D scene **editing** tasks. Refer to our [paper](https://arxiv.org/abs/2312.00732) for more details.
