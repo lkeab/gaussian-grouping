@@ -1,4 +1,4 @@
-# Gaussian Grouping
+# Gaussian Grouping [ECCV'24]
 
 > [**Gaussian Grouping: Segment and Edit Anything in 3D Scenes**](https://arxiv.org/abs/2312.00732)           
 > [[Project Page]](https://ymq2017.github.io/gaussian-grouping)           
@@ -73,10 +73,10 @@ Citation
 ---------------
 If you find Gaussian Grouping useful in your research or refer to the provided baseline results, please star :star: this repository and consider citing :pencil::
 ```
-@article{gaussian_grouping,
-  title={Gaussian Grouping: Segment and Edit Anything in 3D Scenes},
-  author={Ye, Mingqiao and Danelljan, Martin and Yu, Fisher and Ke, Lei},
-  journal={arXiv preprint arXiv:2312.00732},
-  year={2023}
+@inproceedings{gaussian_grouping,
+    title={Gaussian Grouping: Segment and Edit Anything in 3D Scenes},
+    author={Ye, Mingqiao and Danelljan, Martin and Yu, Fisher and Ke, Lei},
+    booktitle={ECCV},
+    year={2024}
 }
 ```
